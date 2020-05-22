@@ -11,7 +11,7 @@ namespace MyNote.API.Controllers
     public class BaseApiController : ApiController
     {
         protected ApplicationDbContext db = new ApplicationDbContext();
-
+      
         protected override void Dispose(bool disposing)
         {
             if (disposing)
