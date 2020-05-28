@@ -12,6 +12,7 @@
 
 .message ul {
     margin-bottom: 0;
+    padding-left: 1rem;
 }
 
 .loading {
