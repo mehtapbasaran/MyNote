@@ -1,7 +1,8 @@
 ﻿//import update from "./src/methods/update";
 
 //GLOBALS
-var apiUrl = "http://localhost:53407/";
+//var apiUrl = "http://localhost:53407/";
+var apiUrl = "https://mynoteapi.mehtapbasaran.com/";
 
 var selectedNote = null;
 var selectedLink = null;
@@ -36,7 +37,6 @@ function showAppPage() {
 
             $("#notes").html("");
             for (var i = 0; i < data.length; i++) {
-
                 addMenuLink(data[i]);
             }
 
@@ -256,7 +256,7 @@ $("#btnLogout").click(function (event) {
     showLoginPage();
 });
 
-//clear selection and form
+// clear selection and form
 $(".add-new-note").click(function () {
     resetNoteForm();
 });
@@ -304,5 +304,6 @@ $("#btnDelete").click(function () {
         }
     }
 });
+
 // ACTIONS
 checkLogin();
