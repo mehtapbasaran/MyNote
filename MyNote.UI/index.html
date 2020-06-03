@@ -1,9 +1,10 @@
 ﻿<!DOCTYPE html>
-<html class="h-100" ng-app="myApp" ng-controller="myCtrl">
+<html class="h-100" ng-app="myApp" ng-controller="mainController">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>My Notes</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/fontawesome-all.min.css" rel="stylesheet" />
     <link href="Content/styles.css" rel="stylesheet" />
@@ -17,7 +18,7 @@
 </head>
 <body class="h-100">
 
-    <div class="loading d-none">
+    <div class="loading" ng-show="isLoading">
         <div class="spinner-border" role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -26,7 +27,7 @@
     <header>
         <!-- Fixed navbar -->
         <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-            <a class="navbar-brand" href="">My Notes</a>
+            <a class="navbar-brand" href="">Never Notes</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -54,6 +55,7 @@
     </header>
 
     <div ng-view class="h-100"></div>
+
 
 </body>
 </html>
